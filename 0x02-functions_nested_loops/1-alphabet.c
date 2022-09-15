@@ -3,7 +3,6 @@
 /**
  * prints alphabet - prints alphabet in lowercase, followed by new line
  */
-
 void print_alphabet(void)
 {
 	char ch;
