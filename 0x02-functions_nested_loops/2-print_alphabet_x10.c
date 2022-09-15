@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * prints_alphabet_x10 - prints alphabet x10 in lowercase 
+ * print_alphabet_x10 - prints alphabet x10 in lowercase 
  * followed by a new line
  */
+
 void print_alphabet_x10(void)
 {
 	char ch;
