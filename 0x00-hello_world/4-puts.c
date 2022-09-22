@@ -1,20 +1,15 @@
 #include <stdio.h>
 
 /**
+ * main - main block
  *
- *  * main - main block
+ * Return: zero 0 if executed properly
  *
- *   * Return: 0
- *
- *    */
+ */
 
 int main(void)
-
 {
-
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"programming is like building a multilingual puzzle")
 
 	return (0);
-
 }
-0-main.c
