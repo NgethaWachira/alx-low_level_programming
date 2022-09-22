@@ -8,7 +8,6 @@
  * @src: string to add
  *
  * Return: a pointer to a resulting string
- *
  */
 
 char *_strcat(char *dest, char *src)
@@ -23,7 +22,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[j] != '\0')
 	{
-		dest[i] != src[j];
+		dest[i] = src[j];
 		j++;
 		i++;
 	}
