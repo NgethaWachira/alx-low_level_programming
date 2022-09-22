@@ -8,6 +8,7 @@
  * @src: string to add
  *
  * Return: a pointer to a resulting string
+ *
  */
 
 char *_strcat(char *dest, char *src)
