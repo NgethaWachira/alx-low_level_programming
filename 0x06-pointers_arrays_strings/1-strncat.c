@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates and find bytes among strings
+ * _strncat - concatenates n bytes of two strings
  *
  * @dest: destination string
  *
@@ -15,23 +15,15 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int dest_len, i;
 
-	i = 0
-	j = 0;
+	for (dest_len = 0; dest[dest_len] != '\0'; dest_len++)
+	;
 
-	while (dest[i] != '\0')
-		i++;
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	       dest[dest_len + 1] = src[i];
 
-	while (src[j] != '\0' && j < n)
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-
-	}
-
-	dest[i] = '\0';
+	dest[dest_len + i] = '\0';
 
 	return (dest);
 }
