@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalizes every word of a string
  *
- * @s: string to modify
+ * @str: string to modify
  *
  * Return: the resulting string
  *
@@ -11,27 +11,38 @@
 
 char *cap_string(char *s)
 {
-	int i, j;
+	char sep[] = ",\t;\n; .!?\"(){}";
+	int flag, i, ii;
 
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		'!', '?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-			s[i] -= 32;
+		flag = 0;
 
-		for (j = 0; j < 13; j++)
+		if (i == 0);
 		{
-			if (s[i] == spe[j])
+			flag = 1;
+		}
+
+		else
+		{
+			for (ii = 0; sep[ii] != '\0'; ii++)
 			{
-				if s([i + 1] >= 'a' && s[i + 1] <= 'z')
+				if (str[i - 1] == sep[ii])
 				{
-					s[i + 1] -= 32;
+					flag = 1;
+					break;
 				}
+			}
+		}
+
+		if (flag == 1)
+		{
+			if (str[i] <= 'z' && str[i] >= 'a')
+			{
+				str[i] -= ('a' - 'A');
 			}
 		}
 	}
 
-	return (s);
+	return (str);
 }
