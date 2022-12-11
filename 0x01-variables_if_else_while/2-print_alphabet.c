@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <ctype.h>
+
 /**
-*main - Program to print alphabet letter followed by new line
-*
-*Return: return 0
+ * main - program prints alphabets followed by a nnew line
+ *
+ * Return: return
+ *
 */
+
 int main(void)
 {
 	int letter;
@@ -15,5 +18,6 @@ int main(void)
 		putchar(letter);
 	}
 	putchar('\n');
+
 	return (0);
 }
