@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <ctype.h>
+
 /**
-*main - Prints all single digits of base 10 followed by new line
+* main - Prints all single digits of base 10 followed by new line
 *
-*Return: returns 0
+* Return: returns 0
 */
+
 int main(void)
 {
 	int digit;
@@ -14,5 +16,6 @@ int main(void)
 		putchar(digit);
 	}
 	putchar('\n');
+
 	return (0);
 }
