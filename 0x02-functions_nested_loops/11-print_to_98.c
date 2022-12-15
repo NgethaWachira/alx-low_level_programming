@@ -4,7 +4,6 @@
 /**
  * print_to_98 - prints numners from n to 98
  * @n: integer to start by 
- *
  * Return: return nothing
  */
 
